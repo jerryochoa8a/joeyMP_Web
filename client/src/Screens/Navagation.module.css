@@ -1,0 +1,64 @@
+.NavBar {
+    background-color: #212121;
+    z-index: 1000;
+}
+
+/* Main layout */
+.navContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+/* Center logo absolutely */
+.logoContainer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+/* Cart on right */
+.cartContainer {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.cartLink {
+    position: relative;
+    color: #df4999ff;
+    text-decoration: none;
+}
+
+.cartIcon {
+    font-size: 32px;
+}
+
+/* Cart badge */
+.cartCount {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #df4999ff;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* 🔥 Mobile tweaks */
+@media (max-width: 768px) {
+    .logo {
+        height: 40px;
+    }
+
+    .cartIcon {
+        font-size: 26px;
+    }
+}
