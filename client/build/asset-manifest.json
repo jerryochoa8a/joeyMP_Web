@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.962d5e95.css",
-    "main.js": "/static/js/main.ea1d911b.js",
+    "main.js": "/static/js/main.6b376f93.js",
     "static/js/453.eca5f793.chunk.js": "/static/js/453.eca5f793.chunk.js",
     "static/media/Logo.png": "/static/media/Logo.b3f783cb846370349ba1.png",
     "static/media/vice_city_retro.jpg": "/static/media/vice_city_retro.4092ac942e5173764c9b.jpg",
     "index.html": "/index.html",
     "main.962d5e95.css.map": "/static/css/main.962d5e95.css.map",
-    "main.ea1d911b.js.map": "/static/js/main.ea1d911b.js.map",
+    "main.6b376f93.js.map": "/static/js/main.6b376f93.js.map",
     "453.eca5f793.chunk.js.map": "/static/js/453.eca5f793.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.962d5e95.css",
-    "static/js/main.ea1d911b.js"
+    "static/js/main.6b376f93.js"
   ]
 }

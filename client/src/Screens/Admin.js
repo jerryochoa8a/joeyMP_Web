@@ -16,7 +16,7 @@ function Admin() {
 
     // Gets all the items created to this page
     useEffect(() => {
-        axios.get("http://localhost:8000/api/itemList")
+        axios.get("/api/itemList")
             .then(res => {
                 console.log(res.data)
                 setMainFeed(res.data);
@@ -41,7 +41,7 @@ function Admin() {
             setErrors("Please fill out all fields fuck ass dude.")
         } else {
 
-            axios.post('http://localhost:8000/api/appt/create', formData, {
+            axios.post('/api/appt/create', formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },
@@ -60,7 +60,7 @@ function Admin() {
 
     //Delete
     const deleteItem = (item_ID) => {
-        axios.delete('http://localhost:8000/api/item/' + item_ID + '/delete')
+        axios.delete('/api/item/' + item_ID + '/delete')
             .then(res => {
                 console.log(res);
                 // navigate('/')

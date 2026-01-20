@@ -12,7 +12,7 @@ function Home() {
 
     // Gets all the items created to this page
     useEffect(() => {
-        axios.get("http://localhost:8000/api/itemList")
+        axios.get("/api/itemList")
             .then(res => {
                 console.log(res.data)
                 setMainFeed(res.data);
@@ -25,7 +25,7 @@ function Home() {
 
     function popupInfo(ID) {
         // Get the info of one Item for the popup
-        axios.get("http://localhost:8000/api/getItem/" + ID)
+        axios.get("/api/getItem/" + ID)
             .then(res => {
                 console.log(res.data)
                 setPopupItem(res.data[0]); // set data for popup
@@ -71,7 +71,7 @@ function Home() {
                 {(mainFeed.map((feed, idx) => (
                     <div className={Styles.item_Box}>
                         <div onClick={() => popupInfo(feed._id)} className={Styles.item_Img_box}>
-                            <img src={'http://localhost:8000' + feed.image} alt={feed.name} />
+                            <img src={feed.image} alt={feed.name} />
                         </div>
                         <div className={Styles.item_Info_box}>
                             <h3>{feed.name}</h3>
